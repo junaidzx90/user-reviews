@@ -1,0 +1,171 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+ .ur_reviews_wrap ul.ur_reviews {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+.ur_reviews_wrap ul.ur_reviews li.ur_review {
+    margin-bottom: 30px;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .ur_useranme p {
+    margin: 0;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .ur_review_contents{
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .ur_review_contents p {
+    margin: 0;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .ur_review_contents .ur_images{
+    margin-top: 20px;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .ur_review_contents .ur_images ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .ur_review_contents .ur_images ul li {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .ur_review_contents .ur_images ul li img{
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    object-fit: cover;
+    width: 100%;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .ur_review_contents .ur_images ul li.active{
+    border: 2px solid #ff9800;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .ur_review_contents .ur_images ul li.active:before {
+    content: " ";
+    position: absolute;
+    bottom: -12px;
+    left: calc(50% - 5px);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #ff9800;
+}
+.ur_reviews_wrap ul.ur_reviews .ur_review .preview_image img{
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+.preview_image img[src=""] {
+    display: none;
+}
+
+.ur_reviews_form {
+    margin-top: 50px;
+}
+h3.ur_title {
+    margin: 0;
+    color: #3e3e3e;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+.ur_reviews_form form .ur_fields {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ur_reviews_form form .ur_fields .ur_field {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.ur_reviews_form form .ur_fields .ur_field label{
+    font-size: 16px;
+    color: #000;
+}
+.ur_reviews_form form .ur_fields .ur_field label span {
+    color: red;
+}
+.ur_reviews_form form .ur_fields .ur_field input, .ur_reviews_form form .ur_fields .ur_field textarea {
+    all: unset;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.ur_reviews_form form .ur_fields .ur_field input[type=file] {
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    left: -9999px;
+}
+input#ur_youremail {
+    width: 50%;
+}
+.ur_reviews_form form .ur_fields .ur_field textarea{
+    width: -webkit-fill-available;
+    width: -moz-available;
+    resize: vertical;
+}
+.ur_reviews_form form .ur_fields .ur_field .ur_stars {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.ur_reviews_form form .ur_fields .ur_field .ur_stars li {
+    float: left;
+    cursor: pointer;
+}
+
+.ur_img_wrapper {
+    display: flex;
+    gap: 20px;
+}
+.ur_img_wrapper .ur_img_lbl {
+    height: 100px;
+    width: 100px;
+    border: 1px solid #ddd;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px !important;
+    line-height: 17px;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+input.review_submit {
+    all: unset;
+    margin-top: 30px;
+    padding: 5px 20px;
+    border-radius: 3px;
+    background-color: #2196f3;
+    color: #fff;
+    cursor: pointer;
+}
+input.review_submit:hover{
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    background-color: #2196f3;
+    opacity: .8;
+}

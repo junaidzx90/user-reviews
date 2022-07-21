@@ -1,0 +1,81 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+.ur_review {
+    margin-bottom: 30px;
+}
+.ur_review table tr th {
+    text-align: left;
+    width: 9%;
+    vertical-align: text-top;
+}
+.ur_review table tr td {
+    vertical-align: text-top;
+}
+.ur_stars {
+    margin-bottom: 10px;
+}
+.ur_review .ur_useranme p {
+    margin: 0;
+}
+.ur_review .ur_review_contents{
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.ur_review .ur_review_contents p {
+    margin: 0;
+    width: 50%;
+}
+.ur_review .ur_review_contents .ur_images{
+    margin-top: 20px;
+}
+.ur_review .ur_review_contents .ur_images ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.ur_review .ur_review_contents .ur_images ul li {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.ur_review .ur_review_contents .ur_images ul li img{
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+    object-fit: cover;
+    width: 100%;
+}
+.ur_review .ur_review_contents .ur_images ul li.active{
+    border: 2px solid #ff9800;
+}
+.ur_review .ur_review_contents .ur_images ul li.active:before {
+    content: " ";
+    position: absolute;
+    bottom: -12px;
+    left: calc(50% - 5px);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #ff9800;
+}
+.ur_review .preview_image img{
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+}
+.preview_image img[src=""] {
+    display: none;
+}
