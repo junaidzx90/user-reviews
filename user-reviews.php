@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 /**
  * The plugin bootstrap file
  *
@@ -29,6 +29,8 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+
+header("Cache-Control: no-cache");
 
 /**
  * Currently plugin version.
